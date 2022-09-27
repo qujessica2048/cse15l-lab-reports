@@ -4,6 +4,7 @@
 
 1. *italics*
 2. **bold**
+3. ***bold italics?!***
 
 ## cats
 
@@ -20,3 +21,4 @@
 ```
 # code block
 print("Hello World")
+```
