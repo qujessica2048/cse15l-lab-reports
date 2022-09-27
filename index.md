@@ -1,24 +1,5 @@
-# Hello world!
+# jessica's lab reports
 
-`my name is jessica`
+[lab report 1](https://qujessica2048.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
 
-1. *italics*
-2. **bold**
-3. ***bold italics?!***
-
-## cats
-
-[the other page](https://qujessica2048.github.io/cse15l-lab-reports/rando.html)
-
-![Image](https://coleandmarmalade.com/wp-content/uploads/2022/01/Bean-Beautynthebean-sassy.jpg)
-
-> i want a cat because they are:
-* cute
-* soft
-* and really funny
-
----
-```
-# code block
-print("Hello World")
-```
+[markdown testing](https://qujessica2048.github.io/cse15l-lab-reports/rando.html)
