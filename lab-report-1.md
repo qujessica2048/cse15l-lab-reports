@@ -117,10 +117,53 @@ scp WhereAmI.java cs15lfa22mb@ieng6.ucsd.edu:~/
 &nbsp;
 
 ## 5. Setting an SSH Key
+Now that everything works, there are ways to make things easier by taking out the login step.
 
+&ensp; 5.1 &ensp; Use the command ```ssh-keygen``` to generate a pair of private and public keys, where the private keys remain on the home computer and the public keys are stored remotely.
+
+&ensp; 5.2 &ensp; When prompted for the file path, password, and password confirmation, hit enter.
+
+&ensp; 5.3* &ensp; Windows computers require the extra step of an ```ssh-add``` command as follows:
+
+```
+# By default the ssh-agent service is disabled. Configure it to start automatically.
+# Make sure you're running as an Administrator.
+Get-Service ssh-agent | Set-Service -StartupType Automatic
+
+# Start the service
+Start-Service ssh-agent
+
+# This should return a status of Running
+Get-Service ssh-agent
+
+# Now load your key files into ssh-agent
+ssh-add $env:USERPROFILE\.ssh\id_ed25519
+```
+
+&ensp; 5.4 &ensp; There should now be the private key saved in a file called ```id_rsa``` and the public key saved in a file called ```id_rsa.pub```. Sign into the remote computer with ```ssh``` and enter password as prompted.
+
+&ensp; 5.5 &ensp; Using the command below, create a new directory called ```.ssh``` and 
+```
+mkdir .ssh
+```
+
+&ensp; 5.6 &ensp; Copy the public keys file ```id_rsa.pub``` to the remotely accessed computer using ```scp``` and logout of the remote computer using ```exit```.
+```
+scp /Users/[your home username]/.ssh/id_rsa.pub [your course-specific username]@ieng6.ucsd.edu:~/.ssh/authorized_keys
+
+exit
+```
+
+&ensp; 5.7 &ensp; To test the keys, use ```ssh``` to sign into the remote computer again, and this time, it should not prompt for a password like so:
+
+![Image](res\lab1\sshKeys.png)
 
 &nbsp;
 
 ## 6. Optimizing Remote Running
 
+- Running commands with quotes at the end of an ```ssh``` command runs it on the remote server and then exits:
+```ssh cs15lfa22mb@ieng6.ucsd.edu "ls"```
+![Image](res\lab1\shortcut1.png)
 
+- Using the up arrow will copy the last command run!
