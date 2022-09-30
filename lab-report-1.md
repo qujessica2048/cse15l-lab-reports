@@ -1,6 +1,6 @@
 # week 1 lab report!
 
-This is a guide on how to log into a course-speciofc account on ieng6! 
+This is a guide on how to log into a course-specific account on ieng6! 
 
 For context, the actual account for remote access starting with cs15lfa22 was not working, so a personal account with TritonLink credentials was used instead.
 
