@@ -70,6 +70,7 @@ class SearchEngine {
     }
 }
 ```
+&nbsp;
 
 ### 1.2 Loading
 Opening the website -- here, the classes in ```Server.java``` are run to create the server. ```SearchEngine.java``` takes in a port number when it is run, which allows it to create a new ```Server```. In this instance, the port number ```4000``` was used.
