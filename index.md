@@ -7,5 +7,9 @@
 &nbsp;
 
 [lab report 2](https://qujessica2048.github.io/cse15l-lab-reports/lab-report-2.html)
+&nbsp;
+
+[lab report 3](https://qujessica2048.github.io/cse15l-lab-reports/lab-report-3.html)
+&nbsp;
 
 [markdown testing](https://qujessica2048.github.io/cse15l-lab-reports/rando.html)
