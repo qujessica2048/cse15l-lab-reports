@@ -55,8 +55,7 @@ Using https://github.com/ucsd-cse15l-f22/list-methods-compile-error
 
 &nbsp;
 
-## Part 1: the Code and Documentation
-### Tracing ```grade.sh```
+## Part 2: Tracing ```grade.sh```
 Command: ```set -e```
 
 &nbsp;
